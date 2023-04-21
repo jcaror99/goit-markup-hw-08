@@ -53,7 +53,30 @@ address {
 .container {
   width: 1200px;
   margin-left: 215px;
-  margin-right: 219px;
+  margin-right: 215px;
+}
+
+.container .filters {
+  display: flex;
+}
+
+.container .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects-card {
+  margin-left: calc(50% - 370px / 2 - 400px);
+  padding-top: calc(50% - 294px / 2 - 519px);
+}
+
+.container .mision-list {
+  display: flex;
+}
+
+.container .list-team {
+  display: flex;
 }
 
 header {

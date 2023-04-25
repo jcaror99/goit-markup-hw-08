@@ -10,6 +10,8 @@
   --contact-color: rgba(255, 255, 255, 0.6);
   --text-color: #757575;
   --black-color: #212121;
+  --card-team-color: #ffffff;
+  --border-header: #ececec;
 
   /*Variables de interlineado line-height(multiplicador)=line-height (px)/font-size (px)*/
   --multi-31-26: 1.2;
@@ -23,19 +25,13 @@
   --multi-36-18: 2;
 }
 
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-  width: 1600px;
-  height: 2410px;
-} */
+/* clases body*/
 
-/* * {
+* {
   box-sizing: border-box;
-  width: 1600px;
-  height: 2410px;
-} */
+  margin: 0;
+  padding: 0;
+}
 
 a {
   text-decoration: none;
@@ -50,65 +46,88 @@ address {
   font-style: normal;
 }
 
+body {
+  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-weight: 700;
+  background-color: var(--sheet-backcolor);
+  color: var(--text-color);
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 1600px;
+  /* height: 2410px; */
+}
+
 .container {
+  box-sizing: border-box;
   width: 1200px;
   margin-left: 215px;
-  margin-right: 215px;
+  margin-right: 219px;
 }
 
-.container .filters {
-  display: flex;
+.section {
+  box-sizing: border-box;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
-
-.container .projects {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.projects-card {
-  margin-left: calc(50% - 370px / 2 - 400px);
-  padding-top: calc(50% - 294px / 2 - 519px);
-}
-
-.container .mision-list {
-  display: flex;
-}
-
-.container .list-team {
-  display: flex;
-}
+/* clases header */
 
 header {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
+  box-sizing: border-box;
+  width: 1600px;
+  height: 80px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--border-header);
 }
 
-.logo {
+div.div-header {
+  box-sizing: border-box;
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+div.div-header.nav {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 93px;
+  padding-top: 32px;
+}
+
+a.logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: var(--logo-color);
   font-size: 26px;
   line-height: var(--multi-31-26);
-  display: flex;
-  padding: 24px;
 }
 
-.nav-menu {
+nav.nav-menu {
   color: var(--black-color);
   line-height: var(--multi-16-14);
+}
+
+ul.list-menu,
+ul.contact-header {
+  display: flex;
+  gap: 50px;
+}
+
+div.div-header.contact {
+  margin-left: 344px;
 }
 
 .contact-header .header-menu {
   color: var(--text-color);
   line-height: var(--multi-16-14);
-  /* flex-direction: row; */
 }
 
 .header-menu:hover,
 .header-menu:focus {
   color: #2196f3;
-  /* flex-direction: row; */
 }
 
 .header-menu.active,
@@ -117,27 +136,38 @@ header {
   color: #2196f3;
 }
 
-body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
-  font-weight: 700;
-  background-color: var(--sheet-backcolor);
-  color: var(--text-color);
-  font-size: 14px;
+/* Clases main */
+main {
   width: 1600px;
-  height: 2410px;
+  /* height: 2078px; */
 }
 
-h1 {
+/* clases titulo */
+section.titulo {
+  background-color: var(--tittle-backcolor);
+  box-sizing: border-box;
+  height: 600px;
+}
+
+.titulo h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
+  text-align: center;
+  font-size: 44px;
+  color: var(--tittle-color);
+  line-height: var(--multi-60-44);
 }
 
-.titulo {
-  background-color: var(--tittle-backcolor);
-  color: var(--tittle-color);
-  font-size: 44px;
-  line-height: var(--multi-60-44);
-  padding: 280px;
+div.container.tittle {
+  box-sizing: border-box;
+  width: 704px;
+  margin-top: 106px;
+  margin-left: 448px;
+  margin-right: 448px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
 }
 
 .request-our-service {
@@ -147,12 +177,24 @@ h1 {
   font-weight: 700;
   line-height: var(--multi-30-16);
   cursor: pointer;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: #2196f3;
 }
 
 .request-our-service:hover,
 .request-our-service:focus {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
+}
+
+/* clases valores */
+
+.valours-list {
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 1px;
+  gap: 30px;
 }
 
 .valores h3 {
@@ -164,12 +206,34 @@ h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   line-height: var(--multi-24-14);
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+/* clases mision */
+
+section.mision.section {
+  padding-top: 0px;
 }
 
 .mision h2 {
   color: var(--black-color);
   font-size: 36px;
   line-height: var(--multi-42-36);
+  text-align: center;
+}
+
+.container .mision-list {
+  display: flex;
+  box-sizing: border-box;
+  padding-top: 55px;
+  gap: 30px;
+}
+
+/* clases team*/
+
+section.equipo {
+  height: 648px;
 }
 
 .equipo {
@@ -180,24 +244,54 @@ h1 {
   color: var(--black-color);
   font-size: 36px;
   line-height: var(--multi-42-36);
+  text-align: center;
+  box-sizing: border-box;
+  padding-bottom: 50px;
 }
 
-.equipo .collaborator-name {
-  color: var(--black-color);
+.container .list-team {
+  display: flex;
+  gap: 37px;
 }
 
-.collaborator-name {
+div.card-team {
+  box-sizing: border-box;
+  width: 270px;
+  height: 368px;
+  background-color: var(--card-team-color);
+}
+
+h3.collaborator-name {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: var(--multi-19-16);
+  color: var(--black-color);
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30px;
 }
 
-.collaborator-profession {
+p.collaborator-profession {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: var(--multi-19-16);
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+
+/* Main portfolio */
+
+section.section.portfolio {
+  padding-top: 106px;
+}
+
+.container .filters {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }
 
 .button-filters {
@@ -206,6 +300,8 @@ h1 {
   font-size: 16px;
   color: var(--black-color);
   line-height: var(--multi-26-16);
+  padding: 6px 24px;
+  border-radius: 4px;
 }
 
 .button-filters:hover,
@@ -228,12 +324,41 @@ h1 {
   line-height: var(--multi-36-18);
 }
 
+.container .projects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.projects-card {
+  margin-left: calc(50% - 370px / 2 - 400px);
+  padding-top: calc(50% - 294px / 2 - 519px);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+}
+
+/* CLASES FOOTER */
+
 footer {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   background-color: var(--tittle-backcolor);
   color: var(--tittle-color);
   line-height: var(--multi-24-14);
+  width: 1600px;
+  height: 252px;
+}
+
+div.div-footer {
+  box-sizing: border-box;
+  display: inline-block;
+  padding-top: 60px;
+}
+
+div.div-footer-address {
+  padding-top: 9px;
+  width: 231px;
 }
 
 .contact-footer {

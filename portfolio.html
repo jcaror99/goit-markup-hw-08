@@ -17,36 +17,42 @@
   <body>
     <header>
       <div class="container">
-        <a class="logo" href="./index.html">WebStudio</a>
-        <nav class="nav-menu">
-          <ul>
+        <div class="div-header">
+          <a class="logo" href="./index.html">WebStudio</a>
+        </div>
+        <div class="div-header nav">
+          <nav class="nav-menu">
+            <ul class="list-menu">
+              <li>
+                <a class="header-menu" href="./index.html">Estudio</a>
+              </li>
+              <li>
+                <a class="header-menu active" href="./portfolio.html"
+                  >Portafolio</a
+                >
+              </li>
+              <li>
+                <a class="header-menu" href="">Сontactos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="div-header contact">
+          <ul class="contact-header">
             <li>
-              <a class="header-menu" href="./index.html">Estudio</a>
-            </li>
-            <li>
-              <a class="header-menu active" href="./portfolio.html"
-                >Portafolio</a
+              <a class="header-menu mail" href="mailto:info@example.com"
+                >info@example.com</a
               >
             </li>
             <li>
-              <a class="header-menu" href="">Сontactos</a>
+              <a class="header-menu" href="">+52 55 5529 6000</a>
             </li>
           </ul>
-        </nav>
-        <ul class="contact-header">
-          <li>
-            <a class="header-menu" href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="header-menu" href="">+52 55 5529 6000</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="section portfolio">
         <div class="container">
           <ul class="filters">
             <li>
@@ -164,24 +170,28 @@
     </main>
     <footer>
       <div class="container">
-        <a class="logo" href="./index.html">WebStudio</a>
-        <address>
-          <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-          <ul>
-            <li>
-              <p>
-                <a class="contact-footer" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </p>
-            </li>
-            <li>
-              <p>
-                <a class="contact-footer" href="">+52 55 5529 6000</a>
-              </p>
-            </li>
-          </ul>
-        </address>
+        <div class="div-footer">
+          <a class="logo" href="./index.html">WebStudio</a>
+        </div>
+        <div class="div-footer-address">
+          <address>
+            <p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
+            <ul>
+              <li>
+                <p>
+                  <a class="contact-footer" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <a class="contact-footer" href="">+52 55 5529 6000</a>
+                </p>
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>

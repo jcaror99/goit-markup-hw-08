@@ -54,7 +54,6 @@ body {
   font-size: 14px;
   box-sizing: border-box;
   width: 1600px;
-  /* height: 2410px; */
 }
 
 .container {
@@ -70,16 +69,15 @@ body {
   padding-bottom: 94px;
 }
 /* clases header */
-
 header {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   box-sizing: border-box;
-  width: 1600px;
-  height: 80px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--border-header);
+  width: 1600px;
+  height: 80px;
 }
 
 div.div-header {
@@ -137,9 +135,9 @@ div.div-header.contact {
 }
 
 /* Clases main */
-main {
+main.main-index {
   width: 1600px;
-  /* height: 2078px; */
+  height: 2078px;
 }
 
 /* clases titulo */
@@ -284,6 +282,12 @@ p.collaborator-profession {
 
 /* Main portfolio */
 
+/* Clases main */
+main.main-portfolio {
+  width: 1600px;
+  height: 1548px;
+}
+
 section.section.portfolio {
   padding-top: 106px;
 }
@@ -292,6 +296,7 @@ section.section.portfolio {
   display: flex;
   justify-content: center;
   gap: 8px;
+  padding-bottom: 50px;
 }
 
 .button-filters {
@@ -299,9 +304,11 @@ section.section.portfolio {
   font-weight: 500;
   font-size: 16px;
   color: var(--black-color);
+  background-color: var(--our-team);
   line-height: var(--multi-26-16);
   padding: 6px 24px;
   border-radius: 4px;
+  border: none;
 }
 
 .button-filters:hover,
@@ -311,19 +318,6 @@ section.section.portfolio {
   cursor: pointer;
 }
 
-.project-filter {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: var(--multi-30-16);
-}
-
-.project-tittle {
-  font-size: 18px;
-  color: var(--black-color);
-  line-height: var(--multi-36-18);
-}
-
 .container .projects {
   display: flex;
   flex-wrap: wrap;
@@ -331,11 +325,36 @@ section.section.portfolio {
 }
 
 .projects-card {
-  margin-left: calc(50% - 370px / 2 - 400px);
-  padding-top: calc(50% - 294px / 2 - 519px);
+  box-sizing: border-box;
+  width: 370px;
+  max-height: 404px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #eeeeee;
+}
+
+li.projects-card img {
+  display: block;
+}
+
+h3.project-tittle {
+  font-size: 18px;
+  color: var(--black-color);
+  line-height: var(--multi-36-18);
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-left: 24px;
+}
+
+.project-filter {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: var(--multi-30-16);
+  box-sizing: border-box;
+  padding-top: 4px;
+  padding-bottom: 20px;
+  padding-left: 24px;
 }
 
 /* CLASES FOOTER */

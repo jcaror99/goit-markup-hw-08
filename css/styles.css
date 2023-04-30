@@ -247,13 +247,16 @@ div.card-team img {
 	display: block;
 }
 
+div.info-card-team {
+	padding: 30px 44px;
+}
+
 h3.collaborator-name {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: var(--multi-19-16);
 	color: var(--black-color);
-	padding-top: 30px;
 }
 
 p.collaborator-profession {
@@ -262,7 +265,6 @@ p.collaborator-profession {
 	font-size: 16px;
 	line-height: var(--multi-19-16);
 	margin-top: 10px;
-	padding-bottom: 30px;
 }
 
 /* Main portfolio */
@@ -314,14 +316,15 @@ li.projects-card img {
 	display: block;
 }
 
+div.info-card {
+	padding: 20px 24px;
+	max-width: 370px;
+}
+
 h3.project-tittle {
 	font-size: 18px;
 	color: var(--black-color);
 	line-height: var(--multi-36-18);
-	padding-top: 20px;
-	padding-left: 24px;
-	padding-right: 24px;
-	max-width: 370px;
 }
 
 .project-filter {
@@ -330,9 +333,6 @@ h3.project-tittle {
 	font-size: 16px;
 	line-height: var(--multi-30-16);
 	margin-top: 4px;
-	padding-left: 24px;
-	padding-right: 24px;
-	padding-bottom: 20px;
 }
 
 /* CLASES FOOTER */

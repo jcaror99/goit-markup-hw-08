@@ -103,7 +103,6 @@ nav.nav-menu {
 ul.list-menu,
 ul.contact-header {
 	display: flex;
-	flex-basis: auto;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	gap: 50px;
@@ -182,8 +181,11 @@ div.container.tittle {
 
 .valours-list {
 	display: flex;
-	flex-basis: calc(50% - (270px / 2) + 400px);
 	gap: 30px;
+}
+
+.valours-list li {
+	flex-basis: calc((100% - 90px) / 4);
 }
 
 .valores h3 {
@@ -214,7 +216,6 @@ section.mision.section {
 .container .mision-list {
 	display: flex;
 	margin-top: 55px;
-	flex-basis: calc(50% - (373px / 2) + 400px);
 	justify-content: space-between;
 }
 
@@ -234,7 +235,6 @@ section.mision.section {
 
 .container .list-team {
 	display: flex;
-	flex-basis: calc(50% - (270px / 2) + 400px);
 	justify-content: space-between;
 }
 
@@ -273,7 +273,6 @@ section.section.portfolio {
 
 .container .filters {
 	display: flex;
-	flex-basis: calc(50% - (611px / 2) + 400px);
 	justify-content: center;
 	gap: 8px;
 	margin-bottom: 50px;
@@ -300,7 +299,6 @@ section.section.portfolio {
 
 .container .projects {
 	display: flex;
-	flex-basis: calc(50% - (370px / 2) + 400px);
 	flex-wrap: wrap;
 	justify-content: space-between;
 	row-gap: 30px;

@@ -233,7 +233,7 @@ section.mision.section {
 	margin-bottom: 50px;
 }
 
-.container .list-team {
+.list-team {
 	display: flex;
 	justify-content: space-between;
 }

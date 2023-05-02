@@ -134,6 +134,11 @@ ul.contact-header {
 
 /* clases titulo */
 section.titulo {
+	background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+		url(/images/header-background-image.jpg), url(/images/header-background-image.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	background-color: var(--tittle-backcolor);
 }
 
@@ -241,6 +246,9 @@ section.mision.section {
 div.card-team {
 	background-color: var(--card-team-color);
 	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 div.card-team img {
@@ -297,6 +305,8 @@ section.section.portfolio {
 	background-color: #2196f3;
 	color: #ffffff;
 	cursor: pointer;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .container .projects {
@@ -310,6 +320,12 @@ section.section.portfolio {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #eeeeee;
+}
+
+.projects-card:hover,
+.projects-card:focus {
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 li.projects-card img {

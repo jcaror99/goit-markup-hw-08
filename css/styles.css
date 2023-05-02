@@ -366,6 +366,45 @@ footer div.container {
 	padding-bottom: 60px;
 }
 
+div.container .list-footer {
+	display: flex;
+	column-gap: 70px;
+}
+
+.icon-list {
+	display: flex;
+	margin-top: 20px;
+}
+
+/* div.footer-icon {
+	display: flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 25px;
+	background-color: #2196f3;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+} */
+
+/* .footer-icon a {
+	display: inline-flex;
+	width: 44px;
+	height: 44px;
+	border-radius: 25px;
+	background-color: #2196f3;
+	justify-content: center;
+	align-items: center;
+} */
+
+svg.svg-footer-icon {
+	padding: 12px;
+	/* display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px; */
+}
+
 .contact-footer {
 	color: var(--contact-color);
 }

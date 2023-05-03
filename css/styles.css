@@ -113,7 +113,32 @@ ul.list-menu {
 }
 
 ul.contact-header {
-	margin-left: 344px;
+	margin-left: 306px;
+	align-items: center;
+}
+
+ul.list-icon-messenger,
+ul.list-icon-phone {
+	display: flex;
+	gap: 10px;
+}
+
+ul.list-icon-messenger svg {
+	display: inline-block;
+	width: 16px;
+	height: 12px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+ul.list-icon-phone svg {
+	display: inline-block;
+	width: 10px;
+	height: 16px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
 }
 
 .contact-header .header-menu {
@@ -366,7 +391,7 @@ footer div.container {
 	padding-bottom: 60px;
 }
 
-div.container .list-footer {
+/* div.container .list-footer {
 	display: flex;
 	column-gap: 70px;
 }
@@ -374,7 +399,8 @@ div.container .list-footer {
 .icon-list {
 	display: flex;
 	margin-top: 20px;
-}
+	color: #afb1b8;
+} */
 
 /* div.footer-icon {
 	display: flex;
@@ -397,13 +423,13 @@ div.container .list-footer {
 	align-items: center;
 } */
 
-svg.svg-footer-icon {
+/* svg.svg-footer-icon {
 	padding: 12px;
-	/* display: inline-block;
+	display: inline-block;
 	width: 20px;
 	height: 20px;
-	margin-left: 10px; */
-}
+	margin-left: 10px;
+} */
 
 .contact-footer {
 	color: var(--contact-color);
@@ -413,3 +439,47 @@ svg.svg-footer-icon {
 .contact-footer:focus {
 	color: #2196f3;
 }
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+/* .icon-brand {
+  width: 2em;
+}
+
+.icon-clock {
+  width: 0.974609375em;
+}
+
+.icon-company {
+  width: 2em;
+}
+
+.icon-company2 {
+  width: 2em;
+}
+
+.icon-foster {
+  width: 2em;
+}
+
+.icon-messenger {
+  width: 1.3330078125em;
+}
+
+.icon-phone {
+  width: 0.625em;
+}
+
+.icon-tagline {
+  width: 2em;
+}
+
+.icon-yayco {
+  width: 2em;
+} */

@@ -211,11 +211,27 @@ div.container.tittle {
 
 .valours-list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 }
 
 .valours-list li {
 	flex-basis: calc((100% - 90px) / 4);
+}
+
+li.li-valours-list {
+	padding: 25px 100px;
+	background-color: var(--our-team);
+	border-radius: 4px;
+}
+
+svg.valours-icon-list {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
 }
 
 .valores h3 {
@@ -298,6 +314,38 @@ p.collaborator-profession {
 	font-size: 16px;
 	line-height: var(--multi-19-16);
 	margin-top: 10px;
+	margin-bottom: 16px;
+}
+
+ul.icon-info-card-team {
+	display: flex;
+}
+
+svg.svg-icon-info-card-team {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
+
+section.customers.section {
+	padding-top: 59px;
+	padding-bottom: 151px;
+}
+
+section.customers.section h2 {
+	font-weight: 700;
+	color: var(--black-color);
+	font-size: 36px;
+	line-height: var(--multi-42-36);
+	text-align: center;
+}
+
+ul.icon-customers-section {
+	display: flex;
+	/* gap: 30px; */
 }
 
 /* Main portfolio */

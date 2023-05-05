@@ -12,6 +12,7 @@
 	--black-color: #212121;
 	--card-team-color: #ffffff;
 	--border-header: #ececec;
+	--border-icon-customer: #afb1b8;
 
 	/*Variables de interlineado line-height(multiplicador)=line-height (px)/font-size (px)*/
 	--multi-31-26: 1.2;
@@ -341,11 +342,29 @@ section.customers.section h2 {
 	font-size: 36px;
 	line-height: var(--multi-42-36);
 	text-align: center;
+	margin-bottom: 44px;
 }
 
 ul.icon-customers-section {
 	display: flex;
-	/* gap: 30px; */
+	justify-content: space-between;
+}
+
+ul.icon-customers-section li {
+	padding: 14px 32px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--border-icon-customer);
+	border-radius: 4px;
+}
+
+svg.svg-icon-customers-section {
+	display: inline-block;
+	width: 106px;
+	height: 53px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
 }
 
 /* Main portfolio */
@@ -439,45 +458,28 @@ footer div.container {
 	padding-bottom: 60px;
 }
 
-/* div.container .list-footer {
+ul.list-footer {
 	display: flex;
-	column-gap: 70px;
+	gap: 70px;
 }
 
-.icon-list {
+li.footer-social-networks h3 {
+	margin-bottom: 20px;
+}
+
+ul.icon-list {
 	display: flex;
-	margin-top: 20px;
-	color: #afb1b8;
-} */
+	gap: 10px;
+}
 
-/* div.footer-icon {
-	display: flex;
-	width: 44px;
-	height: 44px;
-	border-radius: 25px;
-	background-color: #2196f3;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-} */
-
-/* .footer-icon a {
-	display: inline-flex;
-	width: 44px;
-	height: 44px;
-	border-radius: 25px;
-	background-color: #2196f3;
-	justify-content: center;
-	align-items: center;
-} */
-
-/* svg.svg-footer-icon {
-	padding: 12px;
+div.footer-icon svg {
 	display: inline-block;
-	width: 20px;
-	height: 20px;
-	margin-left: 10px;
-} */
+	width: 44px;
+	height: 44px;
+	stroke-width: 0;
+	stroke: currentColor;
+	fill: currentColor;
+}
 
 .contact-footer {
 	color: var(--contact-color);

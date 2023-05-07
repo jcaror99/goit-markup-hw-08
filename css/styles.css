@@ -13,6 +13,7 @@
 	--card-team-color: #ffffff;
 	--border-header: #ececec;
 	--border-icon-customer: #afb1b8;
+	--background-icon-footer: #ffffff1a;
 
 	/*Variables de interlineado line-height(multiplicador)=line-height (px)/font-size (px)*/
 	--multi-31-26: 1.2;
@@ -113,6 +114,12 @@ ul.list-menu {
 	margin-left: 93px;
 }
 
+ul.list-menu li a.header-menu.active,
+ul.list-menu li a.header-menu:hover,
+ul.list-menu li a.header-menu:active {
+	color: var(--logo-color);
+}
+
 ul.contact-header {
 	margin-left: 306px;
 	align-items: center;
@@ -122,40 +129,43 @@ ul.list-icon-messenger,
 ul.list-icon-phone {
 	display: flex;
 	gap: 10px;
+	stroke-width: 0;
+	stroke: currentColor;
+	color: var(--text-color);
+	fill: currentColor;
 }
 
 ul.list-icon-messenger svg {
 	display: inline-block;
 	width: 16px;
 	height: 12px;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
+}
+
+ul.list-icon-messenger:hover {
+	--color5: var(--logo-color);
+}
+
+ul.list-icon-messenger:hover a {
+	color: var(--logo-color);
 }
 
 ul.list-icon-phone svg {
 	display: inline-block;
 	width: 10px;
 	height: 16px;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
+}
+
+ul.list-icon-phone:hover {
+	--color5: var(--logo-color);
+}
+
+ul.list-icon-phone:hover a {
+	color: var(--logo-color);
 }
 
 .contact-header .header-menu {
 	color: var(--text-color);
 	line-height: var(--multi-16-14);
-}
-
-.header-menu:hover,
-.header-menu:focus {
-	color: #2196f3;
-}
-
-.header-menu.active,
-.header-menu:hover,
-.header-menu:active {
-	color: #2196f3;
 }
 
 /* clases titulo */
@@ -323,12 +333,14 @@ ul.icon-info-card-team {
 }
 
 svg.svg-icon-info-card-team {
-	display: inline-block;
 	width: 44px;
 	height: 44px;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
+	fill: var(--card-team-color);
+}
+
+svg.svg-icon-info-card-team:hover use {
+	--color3: var(--card-team-color);
+	--color4: var(--logo-color);
 }
 
 section.customers.section {
@@ -364,7 +376,16 @@ svg.svg-icon-customers-section {
 	height: 53px;
 	stroke-width: 0;
 	stroke: currentColor;
+	color: var(--border-icon-customer);
 	fill: currentColor;
+}
+
+.hover-icon-customers-section:hover {
+	border-color: var(--logo-color);
+}
+
+.hover-icon-customers-section:hover svg {
+	--color3: var(--logo-color);
 }
 
 /* Main portfolio */
@@ -458,6 +479,15 @@ footer div.container {
 	padding-bottom: 60px;
 }
 
+.contact-footer {
+	color: var(--contact-color);
+}
+
+.contact-footer:hover,
+.contact-footer:focus {
+	color: #2196f3;
+}
+
 ul.list-footer {
 	display: flex;
 	gap: 70px;
@@ -476,60 +506,14 @@ div.footer-icon svg {
 	display: inline-block;
 	width: 44px;
 	height: 44px;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
 }
 
-.contact-footer {
-	color: var(--contact-color);
+svg.svg-footer-icon use {
+	--color3: var(--card-team-color);
+	--color4: rgba(255, 255, 255, 0.1);
 }
 
-.contact-footer:hover,
-.contact-footer:focus {
-	color: #2196f3;
+svg.svg-footer-icon:hover use {
+	--color3: var(--card-team-color);
+	--color4: var(--logo-color);
 }
-
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-  font-size: 32px;
-  color: red;
-}
-========================================== */
-
-/* .icon-brand {
-  width: 2em;
-}
-
-.icon-clock {
-  width: 0.974609375em;
-}
-
-.icon-company {
-  width: 2em;
-}
-
-.icon-company2 {
-  width: 2em;
-}
-
-.icon-foster {
-  width: 2em;
-}
-
-.icon-messenger {
-  width: 1.3330078125em;
-}
-
-.icon-phone {
-  width: 0.625em;
-}
-
-.icon-tagline {
-  width: 2em;
-}
-
-.icon-yayco {
-  width: 2em;
-} */

@@ -141,11 +141,13 @@ ul.list-icon-messenger svg {
 	height: 12px;
 }
 
-ul.list-icon-messenger:hover {
+ul.list-icon-messenger:hover,
+ul.list-icon-messenger:focus {
 	--color5: var(--logo-color);
 }
 
-ul.list-icon-messenger:hover a {
+ul.list-icon-messenger:hover a,
+ul.list-icon-messenger:focus a {
 	color: var(--logo-color);
 }
 
@@ -155,11 +157,13 @@ ul.list-icon-phone svg {
 	height: 16px;
 }
 
-ul.list-icon-phone:hover {
+ul.list-icon-phone:hover,
+ul.list-icon-phone:focus {
 	--color5: var(--logo-color);
 }
 
-ul.list-icon-phone:hover a {
+ul.list-icon-phone:hover a,
+ul.list-icon-phone:focus a {
 	color: var(--logo-color);
 }
 
@@ -172,7 +176,7 @@ ul.list-icon-phone:hover a {
 section.titulo {
 	background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 		url(../images/headerBackgroundImage.jpg), url(../images/headerBackgroundImage.jpg);
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: var(--tittle-backcolor);
@@ -230,7 +234,7 @@ div.container.tittle {
 	flex-basis: calc((100% - 90px) / 4);
 }
 
-li.li-valours-list {
+div.li-valours-list {
 	padding: 25px 100px;
 	background-color: var(--our-team);
 	border-radius: 4px;
@@ -248,6 +252,7 @@ svg.valours-icon-list {
 .valores h3 {
 	color: var(--black-color);
 	line-height: var(--multi-16-14);
+	margin-top: 30px;
 }
 
 .valores p {
@@ -338,7 +343,8 @@ svg.svg-icon-info-card-team {
 	fill: var(--card-team-color);
 }
 
-svg.svg-icon-info-card-team:hover use {
+svg.svg-icon-info-card-team:hover use,
+svg.svg-icon-info-card-team:focus use {
 	--color3: var(--card-team-color);
 	--color4: var(--logo-color);
 }
@@ -380,11 +386,13 @@ svg.svg-icon-customers-section {
 	fill: currentColor;
 }
 
-.hover-icon-customers-section:hover {
+.hover-icon-customers-section:hover,
+.hover-icon-customers-section:focus {
 	border-color: var(--logo-color);
 }
 
-.hover-icon-customers-section:hover svg {
+.hover-icon-customers-section:hover svg,
+.hover-icon-customers-section:focus svg {
 	--color3: var(--logo-color);
 }
 
@@ -513,7 +521,8 @@ svg.svg-footer-icon use {
 	--color4: rgba(255, 255, 255, 0.1);
 }
 
-svg.svg-footer-icon:hover use {
+svg.svg-footer-icon:hover use,
+svg.svg-footer-icon:focus use {
 	--color3: var(--card-team-color);
 	--color4: var(--logo-color);
 }

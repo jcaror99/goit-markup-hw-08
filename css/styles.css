@@ -116,6 +116,7 @@ ul.list-menu {
 
 ul.list-menu li a.header-menu.active,
 ul.list-menu li a.header-menu:hover,
+ul.list-menu li a.header-menu:focus,
 ul.list-menu li a.header-menu:active {
 	color: var(--logo-color);
 }

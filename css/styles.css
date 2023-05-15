@@ -14,6 +14,7 @@
 	--border-header: #ececec;
 	--border-icon-customer: #afb1b8;
 	--background-icon-footer: #ffffff1a;
+	--backdrop: rgba(0, 0, 0, 0.2);
 
 	/*Variables de interlineado line-height(multiplicador)=line-height (px)/font-size (px)*/
 	--multi-31-26: 1.2;
@@ -171,6 +172,67 @@ ul.list-icon-phone:focus a {
 .contact-header .header-menu {
 	color: var(--text-color);
 	line-height: var(--multi-16-14);
+}
+/* backdrop */
+
+.backdrop {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--backdrop);
+	top: 0;
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+	transition-property: opacity;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.backdrop .modal-form {
+	width: 528px;
+	height: 581px;
+	background-color: var(--sheet-backcolor);
+	transform: translateY(0vh);
+	opacity: 1;
+	transition: opacity 450ms cubic-bezier(0.4, 0, 0.2, 1),
+		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	position: relative;
+}
+
+.backdrop.is-hidden .modal-form {
+	transform: translateY(100vh);
+	opacity: 0.5;
+}
+
+.icon-close-button {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-radius: 25px;
+	background-color: var(--sheet-backcolor);
+	overflow: hidden;
+	width: 30px;
+	height: 30px;
+}
+
+.icon-close-button svg {
+	width: 11px;
+	height: 11px;
+	margin: 9px;
 }
 
 /* clases titulo */

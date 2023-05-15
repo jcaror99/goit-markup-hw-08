@@ -60,10 +60,21 @@
 			</div>
 		</header>
 		<main class="main-index">
+			<section class="backdrop is-hidden" data-modal>
+				<form action="" class="modal-form is-hidden">
+					<button class="icon-close-button" type="button" data-modal-close>
+						<svg class="svg-icon-close">
+							<use href="./images/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</form>
+			</section>
 			<section class="titulo section">
 				<div class="container tittle">
 					<h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-					<button class="request-our-service" type="button">Solicite nuestro servicio</button>
+					<button data-modal-open class="request-our-service" type="button">
+						Solicite nuestro servicio
+					</button>
 				</div>
 			</section>
 			<section class="valores section">
@@ -414,5 +425,6 @@
 				</ul>
 			</div>
 		</footer>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>

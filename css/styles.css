@@ -26,6 +26,7 @@
 	--multi-19-16: 1.2;
 	--multi-26-16: 1.6;
 	--multi-36-18: 2;
+	--multi-28-18: 1.5;
 }
 
 /* clases body*/
@@ -569,6 +570,11 @@ div.div-projects-card p.overlay-card {
 	align-items: center;
 	transform: translateY(100%);
 	transition: transform ease-in 250ms;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: var(--multi-28-18);
 }
 
 li.projects-card:hover p.overlay-card {

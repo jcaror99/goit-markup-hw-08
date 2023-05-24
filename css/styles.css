@@ -630,7 +630,7 @@ footer div.container {
 
 ul.list-footer {
 	display: flex;
-	gap: 70px;
+	justify-content: space-between;
 }
 
 li.footer-social-networks h3 {
@@ -657,4 +657,53 @@ svg.svg-footer-icon:hover use,
 svg.svg-footer-icon:focus use {
 	--color3: var(--card-team-color);
 	--color4: var(--logo-color);
+}
+
+.newsletter {
+	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: var(--multi-16-14);
+}
+
+input.newsletter-email {
+	padding: 15px 101px 15px 16px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+}
+
+.ul-form-email {
+	display: flex;
+	justify-content: center;
+}
+
+div.div-button-email {
+	background-color: var(--logo-color);
+	color: var(--tittle-color);
+
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: var(--multi-30-16);
+}
+
+div.div-button-email ul {
+	display: flex;
+	align-items: center;
+}
+
+button.button-email {
+	/* margin-left: 12px; */
+	/* padding: 10px 72px 10px 39px; */
+	background-color: var(--logo-color);
+	color: var(--tittle-color);
+	border-style: none;
+}
+
+div.div-button-email ul svg {
+	width: 24px;
+	height: 24px;
 }

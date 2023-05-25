@@ -27,6 +27,7 @@
 	--multi-26-16: 1.6;
 	--multi-36-18: 2;
 	--multi-28-18: 1.5;
+	--multi-20-16: 1.2;
 }
 
 /* clases body*/
@@ -666,16 +667,22 @@ svg.svg-footer-icon:focus use {
 }
 
 input.newsletter-email {
-	padding: 15px 101px 15px 16px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 16px;
+	padding-right: 101px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
+	font-size: 16px;
+	line-height: var(--multi-20-16);
+	background-color: var(--tittle-backcolor);
 }
 
 .ul-form-email {
 	display: flex;
-	justify-content: center;
+	gap: 12px;
 }
 
 div.div-button-email {
@@ -690,20 +697,29 @@ div.div-button-email {
 	line-height: var(--multi-30-16);
 }
 
-div.div-button-email ul {
+div.div-button-email ul.list-button-email {
 	display: flex;
-	align-items: center;
+	gap: 20px;
+}
+
+ul.list-button-email li {
+	padding-top: 10px;
+	padding-bottom: 8px;
 }
 
 button.button-email {
-	/* margin-left: 12px; */
-	/* padding: 10px 72px 10px 39px; */
+	padding-left: 39px;
 	background-color: var(--logo-color);
 	color: var(--tittle-color);
 	border-style: none;
 }
 
-div.div-button-email ul svg {
+div.div-icon-button {
+	margin-right: 28px;
+}
+
+div.div-icon-button svg {
+	display: inline-block;
 	width: 24px;
 	height: 24px;
 }

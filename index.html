@@ -69,6 +69,54 @@
 							<use href="./images/icons.svg#icon-close"></use>
 						</svg>
 					</button>
+					<h3 class="tittle-form">Deje sus datos, nos contactaremos con usted</h3>
+					<ul class="backdrop-list">
+						<li>
+							<label for="backdrop-name" class="label-input">Nombre</label>
+							<svg class="svg-icon-backdrop">
+								<use href="./images/icons.svg#icon-persona-negra"></use>
+							</svg>
+							<input type="text" id="backdrop-name" class="backdrop-input" name="backdrop-name" />
+						</li>
+						<li>
+							<label for="backdrop-name" class="label-input">Teléfono</label>
+							<svg class="svg-icon-backdrop">
+								<use href="./images/icons.svg#icon-telefono-negro"></use>
+							</svg>
+							<input type="tel" id="backdrop-tel" class="backdrop-input" name="backdrop-tel" />
+						</li>
+						<li>
+							<label for="backdrop-name" class="label-input">E-mail</label>
+							<svg class="svg-icon-backdrop">
+								<use href="./images/icons.svg#icon-correo-electronico-negro"></use>
+							</svg>
+							<input
+								type="email"
+								id="backdrop-email"
+								class="backdrop-input"
+								name="backdrop-email"
+							/>
+						</li>
+						<li>
+							<label for="backdrop-comentarios" class="label-input">Comentarios</label>
+							<textarea id="backdrop-comentarios" placeholder="Introduzca el texto"></textarea>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								class="backdrop-checkbox"
+								id="backdrop-checkbox"
+								name="backdrop-checkbox"
+							/>
+							<label for="backdrop-checkbox" class="condiciones"
+								>Estoy de acuerdo con el boletín informativo y acepto los Términos y
+								Condiciones</label
+							>
+						</li>
+						<li>
+							<button type="submit" class="backdrop-button-send">Enviar</button>
+						</li>
+					</ul>
 				</form>
 			</section>
 			<section class="titulo section">
@@ -445,15 +493,13 @@
 								<div class="div-button-email">
 									<ul class="list-button-email">
 										<li>
-											<button type="button" class="button-email">Suscríbase</button>
+											<button type="submit" class="button-email">Suscríbase</button>
 										</li>
 										<li>
 											<div class="div-icon-button">
-												<a href="./index.html">
-													<svg>
-														<use href="./images/icons.svg#icon-enviar-newletters"></use>
-													</svg>
-												</a>
+												<svg>
+													<use href="./images/icons.svg#icon-enviar-newletters"></use>
+												</svg>
 											</div>
 										</li>
 									</ul>

@@ -6,6 +6,7 @@
 
 	/*Variable de colores para el texto*/
 	--logo-color: #2196f3;
+	--button-send: #188ce8;
 	--tittle-color: #ffffff;
 	--contact-color: rgba(255, 255, 255, 0.6);
 	--text-color: #757575;
@@ -252,12 +253,20 @@ button.underlined:hover::after {
 	overflow: hidden;
 	width: 30px;
 	height: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
 }
 
 .icon-close-button svg {
-	width: 11px;
-	height: 11px;
-	margin: 9px;
+	width: 18px;
+	height: 18px;
+}
+
+svg.svg-icon-close:hover use,
+svg.svg-icon-close:focus use {
+	fill: var(--logo-color);
 }
 
 .tittle-form {
@@ -297,6 +306,7 @@ button.underlined:hover::after {
 	padding-left: 42px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	outline: none;
 }
 
 .svg-icon-backdrop {
@@ -305,6 +315,16 @@ button.underlined:hover::after {
 	height: 18px;
 	left: 12px;
 	top: 29px;
+}
+
+div.backdrop-input-container:hover svg,
+div.backdrop-input-container:focus svg {
+	fill: var(--logo-color);
+}
+
+div.backdrop-input-container:hover input,
+div.backdrop-input-container:focus input {
+	border: 1px solid var(--logo-color);
 }
 
 #backdrop-comentarios {
@@ -318,6 +338,10 @@ button.underlined:hover::after {
 #backdrop-comentarios::placeholder {
 	padding-top: 12px;
 	padding-left: 16px;
+}
+
+#backdrop-comentarios:hover {
+	border: 1px solid var(--logo-color);
 }
 
 .condiciones {
@@ -349,6 +373,14 @@ button.underlined:hover::after {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: var(--multi-30-16);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	cursor: pointer;
+}
+
+.backdrop-button-send:hover,
+.backdrop-button-send:focus {
+	background-color: var(--button-send);
+	color: var(--tittle-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -789,6 +821,7 @@ div.div-button-email {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: var(--multi-30-16);
+	cursor: pointer;
 }
 
 div.div-button-email ul.list-button-email {
@@ -807,6 +840,7 @@ button.button-email {
 	color: var(--tittle-color);
 	border-style: none;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 div.div-icon-button {

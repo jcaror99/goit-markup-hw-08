@@ -127,6 +127,21 @@ ul.list-menu li a.header-menu:active {
 	color: var(--logo-color);
 }
 
+li.li-active {
+	position: relative;
+}
+
+li.li-active:hover:after {
+	content: '';
+	position: absolute;
+	bottom: -33px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--logo-color);
+}
+
 ul.contact-header {
 	margin-left: 306px;
 	align-items: center;

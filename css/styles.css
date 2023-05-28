@@ -120,6 +120,10 @@ ul.list-menu {
 	margin-left: 93px;
 }
 
+.active {
+	position: relative;
+}
+
 ul.list-menu li a.header-menu.active,
 ul.list-menu li a.header-menu:hover,
 ul.list-menu li a.header-menu:focus,
@@ -127,11 +131,7 @@ ul.list-menu li a.header-menu:active {
 	color: var(--logo-color);
 }
 
-li.li-active {
-	position: relative;
-}
-
-li.li-active:hover:after {
+.active::after {
 	content: '';
 	position: absolute;
 	bottom: -33px;

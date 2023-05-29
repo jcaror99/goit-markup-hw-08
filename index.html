@@ -16,45 +16,47 @@
 	</head>
 	<body>
 		<header>
-			<div class="container header">
+			<div class="container container--header">
 				<nav class="nav-menu">
-					<a class="logo underlined" href="./index.html">WebStudio</a>
-					<ul class="list-menu">
+					<a class="link-logo underlined" href="./index.html">WebStudio</a>
+					<ul class="header-list header-list--menu">
 						<li>
-							<a class="header-menu active underlined" href="./index.html">Estudio</a>
+							<a class="header-list__link header-list__link--active underlined" href="./index.html"
+								>Estudio</a
+							>
 						</li>
 						<li>
-							<a class="header-menu underlined" href="./portfolio.html">Portafolio</a>
+							<a class="header-list__link underlined" href="./portfolio.html">Portafolio</a>
 						</li>
 						<li>
-							<a class="header-menu underlined" href="">Сontactos</a>
+							<a class="header-list__link underlined" href="">Сontactos</a>
 						</li>
 					</ul>
 				</nav>
-				<ul class="contact-header">
+				<ul class="header-list">
 					<li>
-						<ul class="list-icon-messenger">
-							<li class="hover-list-icon-header">
-								<svg>
+						<ul class="header-list-contact">
+							<li>
+								<svg class="header-list-contact--messenger">
 									<use href="./images/icons.svg#icon-messenger"></use>
 								</svg>
 							</li>
-							<li class="hover-list-icon-header">
-								<a class="header-menu underlined" href="mailto:info@example.com"
+							<li>
+								<a class="header-list-contact__link underlined" href="mailto:info@example.com"
 									>info@example.com</a
 								>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<ul class="list-icon-phone">
+						<ul class="header-list-contact">
 							<li>
-								<svg>
+								<svg class="header-list-contact--phone">
 									<use href="./images/icons.svg#icon-phone"></use>
 								</svg>
 							</li>
 							<li>
-								<a class="header-menu underlined" href="">+52 55 5529 6000</a>
+								<a class="header-list-contact__link underlined" href="">+52 55 5529 6000</a>
 							</li>
 						</ul>
 					</li>
@@ -62,72 +64,88 @@
 			</div>
 		</header>
 		<main class="main-index">
-			<section class="backdrop is-hidden" data-modal>
-				<form action="" class="modal-form is-hidden">
-					<button class="icon-close-button" type="button" data-modal-close>
-						<svg class="svg-icon-close">
-							<use href="./images/icons.svg#icon-close"></use>
+			<section class="section section-backdrop is-hidden" data-modal>
+				<form action="" class="section-backdrop__modal-form is-hidden">
+					<button class="section-backdrop__button" type="button" data-modal-close>
+						<svg class="section-backdrop__icon">
+							<use class="section-backdrop__icon-close" href="./images/icons.svg#icon-close"></use>
 						</svg>
 					</button>
-					<h3 class="tittle-form">Deje sus datos, nos contactaremos con usted</h3>
-					<ul class="backdrop-list">
-						<li>
-							<label for="backdrop-name" class="label-input">Nombre</label>
-							<div class="backdrop-input-container">
-								<svg class="svg-icon-backdrop">
+					<h3 class="section-backdrop__tittle-form">Deje sus datos, nos contactaremos con usted</h3>
+					<ul class="section-design-form">
+						<li class="section-design-form__item">
+							<label for="backdrop-name" class="section-design-form__label">Nombre</label>
+							<div class="section-design-form__container">
+								<svg class="section-design-form__icon">
 									<use href="./images/icons.svg#icon-persona-negra"></use>
 								</svg>
-								<input type="text" id="backdrop-name" class="backdrop-input" name="backdrop-name" />
+								<input
+									type="text"
+									id="backdrop-name"
+									class="section-design-form__input"
+									name="backdrop-name"
+								/>
 							</div>
 						</li>
-						<li>
-							<label for="backdrop-name" class="label-input">Teléfono</label>
-							<div class="backdrop-input-container">
-								<svg class="svg-icon-backdrop">
+						<li class="section-design-form__item">
+							<label for="backdrop-name" class="section-design-form__label">Teléfono</label>
+							<div class="section-design-form__container">
+								<svg class="section-design-form__icon">
 									<use href="./images/icons.svg#icon-telefono-negro"></use>
 								</svg>
-								<input type="tel" id="backdrop-tel" class="backdrop-input" name="backdrop-tel" />
+								<input
+									type="tel"
+									id="backdrop-tel"
+									class="section-design-form__input"
+									name="backdrop-tel"
+								/>
 							</div>
 						</li>
-						<li>
-							<label for="backdrop-name" class="label-input">E-mail</label>
-							<div class="backdrop-input-container">
-								<svg class="svg-icon-backdrop">
+						<li class="section-design-form__item">
+							<label for="backdrop-name" class="section-design-form__label">E-mail</label>
+							<div class="section-design-form__container">
+								<svg class="section-design-form__icon">
 									<use href="./images/icons.svg#icon-correo-electronico-negro"></use>
 								</svg>
 								<input
 									type="email"
 									id="backdrop-email"
-									class="backdrop-input"
+									class="section-design-form__input"
 									name="backdrop-email"
 								/>
 							</div>
 						</li>
-						<li>
-							<label for="backdrop-comentarios" class="label-input">Comentarios</label>
-							<div class="backdrop-input-container">
-								<textarea id="backdrop-comentarios" placeholder="Introduzca el texto"></textarea>
+						<li class="section-design-form__item">
+							<label for="backdrop-comentarios" class="section-design-form__label"
+								>Comentarios</label
+							>
+							<div class="section-design-form__container">
+								<textarea
+									id="backdrop-comentarios"
+									placeholder="Introduzca el texto"
+									class="section-design-form__label-area"
+								></textarea>
 							</div>
 						</li>
 						<li>
 							<input
 								type="checkbox"
-								class="backdrop-checkbox"
+								class="section-design-form__check"
 								id="backdrop-checkbox"
 								name="backdrop-checkbox"
 							/>
-							<label for="backdrop-checkbox" class="condiciones"
+							<label for="backdrop-checkbox" class="section-design-form__label--condiciones"
 								>Estoy de acuerdo con el boletín informativo y acepto los Términos y
 								Condiciones</label
 							>
 						</li>
 						<li>
-							<button type="submit" class="backdrop-button-send">Enviar</button>
+							<button type="submit" class="section-design-form__button">Enviar</button>
 						</li>
 					</ul>
 				</form>
 			</section>
-			<section class="titulo section">
+			<section class="section titulo">
 				<div class="container tittle">
 					<h1 class="underlined">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
 					<button data-modal-open class="request-our-service underlined" type="button">
@@ -135,7 +153,7 @@
 					</button>
 				</div>
 			</section>
-			<section class="valores section">
+			<section class="section valores">
 				<div class="container">
 					<ul class="valours-list">
 						<li>
@@ -189,7 +207,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="mision section">
+			<section class="section mision">
 				<div class="container">
 					<h2 class="p-underlined">A qué nos dedicamos</h2>
 					<ul class="mision-list">
@@ -208,7 +226,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="equipo section">
+			<section class="section equipo">
 				<div class="container">
 					<h2 class="p-underlined">Nuestro Equipo</h2>
 					<ul class="list-team">
@@ -371,7 +389,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="customers section">
+			<section class="section customers">
 				<div class="container">
 					<h2 class="p-underlined">Clientes Regulares</h2>
 					<ul class="icon-customers-section">
@@ -426,7 +444,7 @@
 				<ul class="list-footer">
 					<li>
 						<address>
-							<a class="logo p-underlined" href="./index.html">WebStudio</a>
+							<a class="link-logo p-underlined" href="./index.html">WebStudio</a>
 							<p class="p-underlined">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
 							<ul>
 								<li>

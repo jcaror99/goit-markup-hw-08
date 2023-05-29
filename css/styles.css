@@ -61,20 +61,6 @@ body {
 	font-size: 14px;
 }
 
-.container {
-	width: 1200px;
-	padding-left: 15px;
-	padding-right: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.section {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
-/* clases header */
 header {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
@@ -83,115 +69,34 @@ header {
 	border-bottom-color: var(--border-header);
 }
 
-a.logo {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-	color: var(--logo-color);
-	font-size: 26px;
-	line-height: var(--multi-31-26);
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
 }
-
-.nav-menu a.logo {
-	padding-top: 24px;
-	padding-bottom: 25px;
-}
-
-div.container.header {
+.container--header {
 	display: flex;
 	flex-direction: row;
 }
 
-nav.nav-menu {
+.nav-menu {
 	color: var(--black-color);
 	line-height: var(--multi-16-14);
 	display: flex;
 	flex-direction: row;
 }
 
-ul.list-menu,
-ul.contact-header {
-	display: flex;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	gap: 50px;
-}
-
-ul.list-menu {
-	margin-left: 93px;
-}
-
-.active {
-	position: relative;
-}
-
-ul.list-menu li a.header-menu.active,
-ul.list-menu li a.header-menu:hover,
-ul.list-menu li a.header-menu:focus,
-ul.list-menu li a.header-menu:active {
+.link-logo {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 	color: var(--logo-color);
-}
+	font-size: 26px;
+	line-height: var(--multi-31-26);
 
-.active::after {
-	content: '';
-	position: absolute;
-	bottom: -33px;
-	left: 0;
-	width: 100%;
-	height: 4px;
-	border-radius: 2px;
-	background-color: var(--logo-color);
-}
-
-ul.contact-header {
-	margin-left: 306px;
-	align-items: center;
-}
-
-ul.list-icon-messenger,
-ul.list-icon-phone {
-	display: flex;
-	gap: 10px;
-	stroke-width: 0;
-	stroke: currentColor;
-	color: var(--text-color);
-	fill: currentColor;
-}
-
-ul.list-icon-messenger svg {
-	display: inline-block;
-	width: 16px;
-	height: 12px;
-}
-
-ul.list-icon-messenger:hover,
-ul.list-icon-messenger:focus {
-	--color5: var(--logo-color);
-}
-
-ul.list-icon-messenger:hover a,
-ul.list-icon-messenger:focus a {
-	color: var(--logo-color);
-}
-
-ul.list-icon-phone svg {
-	display: inline-block;
-	width: 10px;
-	height: 16px;
-}
-
-ul.list-icon-phone:hover,
-ul.list-icon-phone:focus {
-	--color5: var(--logo-color);
-}
-
-ul.list-icon-phone:hover a,
-ul.list-icon-phone:focus a {
-	color: var(--logo-color);
-}
-
-.contact-header .header-menu {
-	color: var(--text-color);
-	line-height: var(--multi-16-14);
+	padding-top: 24px;
+	padding-bottom: 25px;
 }
 
 .underlined:hover::after {
@@ -199,12 +104,10 @@ ul.list-icon-phone:focus a {
 	display: block;
 	outline: 1px solid var(--logo-color);
 }
-
 button.underlined:hover::after {
 	text-decoration: underline;
 	outline: 1px solid var(--logo-color);
 }
-
 .p-underlined:hover {
 	content: '';
 	display: block;
@@ -214,9 +117,70 @@ button.underlined:hover::after {
 	text-decoration-color: var(--logo-color);
 }
 
-/* backdrop */
+.header-list {
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	gap: 50px;
+	margin-left: 306px;
+	align-items: center;
+}
+.header-list--menu {
+	margin-left: 93px;
+}
+.header-list-contact {
+	display: flex;
+	gap: 10px;
+	stroke-width: 0;
+	stroke: currentColor;
+	color: var(--text-color);
+	fill: currentColor;
+}
+.header-list-contact:hover,
+.header-list-contact:focus {
+	--color5: var(--logo-color);
+}
+.header-list-contact--messenger {
+	width: 16px;
+	height: 12px;
+}
+.header-list-contact--phone {
+	width: 10px;
+	height: 16px;
+}
+.header-list-contact__link:hover,
+.header-list-contact__link:focus {
+	color: var(--logo-color);
+}
+.header-list-contact__link {
+	color: var(--text-color);
+	line-height: var(--multi-16-14);
+}
+.header-list__link--active,
+.header-list__link:hover,
+.header-list__link:focus,
+.header-list__link:active {
+	color: var(--logo-color);
+}
+.header-list__link--active {
+	position: relative;
+}
+.header-list__link--active::after {
+	content: '';
+	position: absolute;
+	bottom: -35px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	border-radius: 2px;
+	background-color: var(--logo-color);
+}
 
-.backdrop {
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+.section-backdrop {
 	position: fixed;
 	width: 100vw;
 	height: 100vh;
@@ -235,14 +199,12 @@ button.underlined:hover::after {
 
 	z-index: 2;
 }
-
-.backdrop.is-hidden {
+.section-backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
 	visibility: hidden;
 }
-
-.backdrop .modal-form {
+.section-backdrop__modal-form {
 	width: 528px;
 	height: 581px;
 	background-color: var(--sheet-backcolor);
@@ -252,13 +214,11 @@ button.underlined:hover::after {
 		transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	position: relative;
 }
-
-.backdrop.is-hidden .modal-form {
+.section-backdrop.is-hidden .section-backdrop__modal-form {
 	transform: translateY(100vh);
 	opacity: 0.5;
 }
-
-.icon-close-button {
+.section-backdrop__button {
 	position: absolute;
 	top: 8px;
 	right: 8px;
@@ -275,18 +235,15 @@ button.underlined:hover::after {
 	align-items: center;
 	cursor: pointer;
 }
-
-.icon-close-button svg {
+.section-backdrop__icon {
 	width: 18px;
 	height: 18px;
 }
-
-svg.svg-icon-close:hover use,
-svg.svg-icon-close:focus use {
+.section-backdrop__icon:hover .section-backdrop__icon-close,
+.section-backdrop__icon:focus .section-backdrop__icon-close {
 	fill: var(--logo-color);
 }
-
-.tittle-form {
+.section-backdrop__tittle-form {
 	padding-top: 40px;
 	padding-right: 40px;
 	padding-bottom: 2px;
@@ -297,14 +254,15 @@ svg.svg-icon-close:focus use {
 	text-align: center;
 	color: var(--black-color);
 }
-
-.backdrop-list {
+.section-design-form {
 	padding-right: 40px;
 	padding-bottom: 40px;
 	padding-left: 40px;
 }
-
-.label-input {
+.section-design-form__item {
+	position: relative;
+}
+.section-design-form__label {
 	display: block;
 	font-size: 12px;
 	line-height: var(--multi-14-12);
@@ -312,12 +270,18 @@ svg.svg-icon-close:focus use {
 	margin-top: 10px;
 	margin-bottom: 4px;
 }
-
-.backdrop-list li {
-	position: relative;
+.section-design-form__icon {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	left: 12px;
+	top: 29px;
 }
-
-.backdrop-input {
+.section-design-form__container:hover .section-design-form__icon,
+.section-design-form__container:focus .section-design-form__icon {
+	fill: var(--logo-color);
+}
+.section-design-form__input {
 	height: 40px;
 	width: 100%;
 	padding-left: 42px;
@@ -325,60 +289,39 @@ svg.svg-icon-close:focus use {
 	border-radius: 4px;
 	outline: none;
 }
-
-.svg-icon-backdrop {
-	position: absolute;
-	width: 18px;
-	height: 18px;
-	left: 12px;
-	top: 29px;
-}
-
-div.backdrop-input-container:hover svg,
-div.backdrop-input-container:focus svg {
-	fill: var(--logo-color);
-}
-
-div.backdrop-input-container:hover input,
-div.backdrop-input-container:focus input {
+.section-design-form__container:hover .section-design-form__input,
+.section-design-form__container:focus .section-design-form__input {
 	border: 1px solid var(--logo-color);
 }
-
-#backdrop-comentarios {
+.section-design-form__label-area {
 	width: 100%;
 	height: 120px;
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	margin-bottom: 20px;
 }
-
-#backdrop-comentarios::placeholder {
+.section-design-form__label-area::placeholder {
 	padding-top: 12px;
 	padding-left: 16px;
 }
-
-#backdrop-comentarios:hover {
+.section-design-form__label-area:hover {
 	border: 1px solid var(--logo-color);
 }
-
-.condiciones {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: var(--multi-24-14);
-}
-
-.backdrop-checkbox {
+.section-design-form__check {
 	width: 16px;
 	height: 15px;
 	margin-right: 8px;
 }
-
-.backdrop-list li:last-child {
+.section-design-form__label--condiciones {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: var(--multi-24-14);
+}
+.section-design-form li:last-child {
 	display: flex;
 	justify-content: center;
 }
-
-.backdrop-button-send {
+.section-design-form__button {
 	padding-top: 10px;
 	padding-right: 75px;
 	padding-bottom: 10px;
@@ -393,9 +336,8 @@ div.backdrop-input-container:focus input {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	cursor: pointer;
 }
-
-.backdrop-button-send:hover,
-.backdrop-button-send:focus {
+.section-design-form__button:hover,
+.section-design-form__button:focus {
 	background-color: var(--button-send);
 	color: var(--tittle-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);

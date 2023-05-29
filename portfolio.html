@@ -16,45 +16,49 @@
 	</head>
 	<body>
 		<header>
-			<div class="container header">
+			<div class="container container--header">
 				<nav class="nav-menu">
-					<a class="logo underlined" href="./index.html">WebStudio</a>
-					<ul class="list-menu">
+					<a class="link-logo underlined" href="./index.html">WebStudio</a>
+					<ul class="header-list header-list--menu">
 						<li>
-							<a class="header-menu underlined" href="./index.html">Estudio</a>
+							<a class="header-list__link underlined" href="./index.html">Estudio</a>
 						</li>
 						<li>
-							<a class="header-menu active underlined" href="./portfolio.html">Portafolio</a>
+							<a
+								class="header-list__link header-list__link--active underlined"
+								href="./portfolio.html"
+								>Portafolio</a
+							>
 						</li>
 						<li>
-							<a class="header-menu underlined" href="">Сontactos</a>
+							<a class="header-list__link underlined" href="">Сontactos</a>
 						</li>
 					</ul>
 				</nav>
-				<ul class="contact-header">
+				<ul class="header-list">
 					<li>
-						<ul class="list-icon-messenger">
+						<ul class="header-list-contact">
 							<li>
-								<svg>
+								<svg class="header-list-contact--messenger">
 									<use href="./images/icons.svg#icon-messenger"></use>
 								</svg>
 							</li>
 							<li>
-								<a class="header-menu mail underlined" href="mailto:info@example.com"
+								<a class="header-list-contact__link underlined" href="mailto:info@example.com"
 									>info@example.com</a
 								>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<ul class="list-icon-phone">
+						<ul class="header-list-contact">
 							<li>
-								<svg>
+								<svg class="header-list-contact--phone">
 									<use href="./images/icons.svg#icon-phone"></use>
 								</svg>
 							</li>
 							<li>
-								<a class="header-menu underlined" href="">+52 55 5529 6000</a>
+								<a class="header-list-contact__link underlined" href="">+52 55 5529 6000</a>
 							</li>
 						</ul>
 					</li>
@@ -237,7 +241,7 @@
 				<ul class="list-footer">
 					<li>
 						<address>
-							<a class="logo p-underlined" href="./index.html">WebStudio</a>
+							<a class="link-logo p-underlined" href="./index.html">WebStudio</a>
 							<p class="p-underlined">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
 							<ul>
 								<li>

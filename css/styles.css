@@ -385,25 +385,20 @@ button.underlined:hover::after {
 	color: #ffffff;
 }
 
-/* clases valores */
-
-.valours-list {
+.section-valours__list {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
 }
-
-.valours-list li {
+.section-valours__item {
 	flex-basis: calc((100% - 90px) / 4);
 }
-
-div.li-valours-list {
+.section-valours__container-icon {
 	padding: 25px 100px;
 	background-color: var(--our-team);
 	border-radius: 4px;
 }
-
-svg.valours-icon-list {
+.section-valours__icon {
 	display: inline-block;
 	width: 70px;
 	height: 70px;
@@ -411,45 +406,37 @@ svg.valours-icon-list {
 	stroke: currentColor;
 	fill: currentColor;
 }
-
-.valores h3 {
+.section-valours__tittle {
 	color: var(--black-color);
 	line-height: var(--multi-16-14);
 	margin-top: 30px;
 }
-
-.valores p {
+.section-valours__description {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	line-height: var(--multi-24-14);
 	margin-top: 10px;
 }
 
-/* clases mision */
-
-section.mision.section {
+.section-mision {
 	padding-top: 0px;
 }
-
-.mision h2 {
+.section-mision__tittle {
 	color: var(--black-color);
 	font-size: 36px;
 	line-height: var(--multi-42-36);
 	text-align: center;
 }
-
-.container .mision-list {
+.section-mision__tittle__list {
 	display: flex;
 	margin-top: 55px;
 	justify-content: space-between;
 }
-
-li.overlay-mision-card {
+.section-mision__tittle__item {
 	position: relative;
 	overflow: hidden;
 }
-
-p.p-overlay-mision-card {
+.section-mision__description {
 	position: absolute;
 	top: 224px;
 	left: 0;

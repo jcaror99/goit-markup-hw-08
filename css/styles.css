@@ -33,8 +33,6 @@
 	--multi-14-12: 1.1;
 }
 
-/* clases body*/
-
 * {
 	margin: 0;
 	padding: 0;
@@ -51,14 +49,6 @@ ul {
 
 address {
 	font-style: normal;
-}
-
-body {
-	font-family: 'Roboto', 'Raleway', sans-serif;
-	font-weight: 700;
-	background-color: var(--sheet-backcolor);
-	color: var(--text-color);
-	font-size: 14px;
 }
 
 header {
@@ -88,13 +78,14 @@ header {
 	flex-direction: row;
 }
 
-.link-logo {
+.logo {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 	color: var(--logo-color);
 	font-size: 26px;
 	line-height: var(--multi-31-26);
-
+}
+.logo--header {
 	padding-top: 24px;
 	padding-bottom: 25px;
 }
@@ -174,6 +165,14 @@ button.underlined:hover::after {
 	height: 4px;
 	border-radius: 2px;
 	background-color: var(--logo-color);
+}
+
+body {
+	font-family: 'Roboto', 'Raleway', sans-serif;
+	font-weight: 700;
+	background-color: var(--sheet-backcolor);
+	color: var(--text-color);
+	font-size: 14px;
 }
 
 .section {
@@ -450,50 +449,41 @@ button.underlined:hover::after {
 	z-index: 1;
 }
 
-/* clases team*/
-
-.equipo {
+.section-team {
 	background-color: var(--our-team);
 }
-
-.equipo h2 {
+.section-team__tittle {
 	color: var(--black-color);
 	font-size: 36px;
 	line-height: var(--multi-42-36);
 	text-align: center;
 	margin-bottom: 50px;
 }
-
-.list-team {
+.section-team__list {
 	display: flex;
 	justify-content: space-between;
 }
-
-div.card-team {
+.section-team__container {
 	background-color: var(--card-team-color);
 	text-align: center;
 	border-radius: 0px 0px 4px 4px;
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-
-div.card-team img {
+.section-team__img {
 	display: block;
 }
-
-div.info-card-team {
+.section-team-card {
 	padding: 30px 44px;
 }
-
-h3.collaborator-name {
+.section-team-card__tittle {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: var(--multi-19-16);
 	color: var(--black-color);
 }
-
-p.collaborator-profession {
+.section-team-card__profession {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -502,28 +492,25 @@ p.collaborator-profession {
 	margin-bottom: 16px;
 }
 
-ul.icon-info-card-team {
+.social-item {
 	display: flex;
 }
-
-svg.svg-icon-info-card-team {
+.social-item__icon-name {
 	width: 44px;
 	height: 44px;
 	fill: var(--card-team-color);
 }
-
-svg.svg-icon-info-card-team:hover use,
-svg.svg-icon-info-card-team:focus use {
+.social-item__icon-name:hover .social-item__icon,
+.social-item__icon-name:focus .social-item__icon {
 	--color3: var(--card-team-color);
 	--color4: var(--logo-color);
 }
 
-section.customers.section {
+.section-customers {
 	padding-top: 59px;
 	padding-bottom: 151px;
 }
-
-section.customers.section h2 {
+.section-customers_tittle {
 	font-weight: 700;
 	color: var(--black-color);
 	font-size: 36px;
@@ -531,21 +518,18 @@ section.customers.section h2 {
 	text-align: center;
 	margin-bottom: 44px;
 }
-
-ul.icon-customers-section {
+.section-customers_icon-list {
 	display: flex;
 	justify-content: space-between;
 }
-
-ul.icon-customers-section li {
+.section-customers_item {
 	padding: 14px 32px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: var(--border-icon-customer);
 	border-radius: 4px;
 }
-
-svg.svg-icon-customers-section {
+.section-customers_name-icon {
 	display: inline-block;
 	width: 106px;
 	height: 53px;
@@ -554,31 +538,25 @@ svg.svg-icon-customers-section {
 	color: var(--border-icon-customer);
 	fill: currentColor;
 }
-
-.hover-icon-customers-section:hover,
-.hover-icon-customers-section:focus {
+.section-customers_item:hover,
+.section-customers_item:focus {
 	border-color: var(--logo-color);
 }
-
-.hover-icon-customers-section:hover svg,
-.hover-icon-customers-section:focus svg {
+.section-customers_item:hover .section-customers_name-icon,
+.section-customers_item:focus .section-customers_name-icon {
 	--color3: var(--logo-color);
 }
 
-/* Main portfolio */
-
-section.section.portfolio {
+.section.section-portfolio {
 	padding-top: 106px;
 }
-
-.container .filters {
+.section-portfolio__filters {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
 	margin-bottom: 50px;
 }
-
-.button-filters {
+.section-portfolio__button {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
 	font-size: 16px;
@@ -589,41 +567,35 @@ section.section.portfolio {
 	border-radius: 4px;
 	border: none;
 }
-
-.button-filters:hover,
-.button-filters:focus {
+.section-portfolio__button:hover,
+.section-portfolio__button:focus {
 	background-color: var(--logo-color);
 	color: #ffffff;
 	cursor: pointer;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
 		0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-
-.container .projects {
+.section-portfolio__catalog {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	row-gap: 30px;
 }
-
-.projects-card {
+.section-portfolio__item {
 	border-width: 1px;
 	border-style: solid;
 	border-color: #eeeeee;
 }
-
-.projects-card:hover,
-.projects-card:focus {
+.section-portfolio__item:hover,
+.section-portfolio__item:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-div.div-projects-card {
+.section-portfolio__card {
 	position: relative;
 	overflow: hidden;
 }
-
-div.div-projects-card p.overlay-card {
+.section-portfolio__card .section-portfolio__description {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -642,35 +614,28 @@ div.div-projects-card p.overlay-card {
 	font-size: 18px;
 	line-height: var(--multi-28-18);
 }
-
-li.projects-card:hover p.overlay-card {
+.section-portfolio__item:hover .section-portfolio__description {
 	transform: translateY(0%);
 }
-
-li.projects-card img {
+.section-portfolio__img {
 	display: block;
 }
-
-div.info-card {
+.section-portfolio__container {
 	padding: 20px 24px;
 	max-width: 370px;
 }
-
-h3.project-tittle {
+.section-portfolio__tittle {
 	font-size: 18px;
 	color: var(--black-color);
 	line-height: var(--multi-36-18);
 }
-
-.project-filter {
+.section-portfolio__filter {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: var(--multi-30-16);
 	margin-top: 4px;
 }
-
-/* CLASES FOOTER */
 
 footer {
 	font-family: 'Roboto', sans-serif;
@@ -679,59 +644,48 @@ footer {
 	color: var(--tittle-color);
 	line-height: var(--multi-24-14);
 }
-
-footer div.container {
+.footer-container {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
-
-.contact-footer {
-	color: var(--contact-color);
-}
-
-.contact-footer:hover,
-.contact-footer:focus {
-	color: var(--logo-color);
-}
-
-ul.list-footer {
+.footer-container__list {
 	display: flex;
 	justify-content: space-between;
 }
-
-li.footer-social-networks h3 {
+.footer-container__link {
+	color: var(--contact-color);
+}
+.footer-container__link:hover,
+.footer-container__link:focus {
+	color: var(--logo-color);
+}
+.footer-container__tittle {
 	margin-bottom: 20px;
 }
-
-ul.icon-list {
+.footer-container__icon-list {
 	display: flex;
 	gap: 10px;
 }
-
-div.footer-icon svg {
+.footer-container__icon-name {
 	display: inline-block;
 	width: 44px;
 	height: 44px;
 }
-
-svg.svg-footer-icon use {
+.footer-container__icon {
 	--color3: var(--card-team-color);
 	--color4: rgba(255, 255, 255, 0.1);
 }
-
-svg.svg-footer-icon:hover use,
-svg.svg-footer-icon:focus use {
+.footer-container__icon-name:hover .footer-container__icon,
+.footer-container__icon-name:focus .footer-container__icon {
 	--color3: var(--card-team-color);
 	--color4: var(--logo-color);
 }
-
-.newsletter {
+.footer-container__newsletter-tittle {
 	margin-bottom: 20px;
 	font-size: 14px;
 	line-height: var(--multi-16-14);
 }
-
-input.newsletter-email {
+.footer-container__input {
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 16px;
@@ -744,13 +698,11 @@ input.newsletter-email {
 	line-height: var(--multi-20-16);
 	background-color: var(--tittle-backcolor);
 }
-
-.ul-form-email {
+.footer-container__newsletter-list {
 	display: flex;
 	gap: 12px;
 }
-
-div.div-button-email {
+.container-email {
 	background-color: var(--logo-color);
 	color: var(--tittle-color);
 
@@ -762,18 +714,15 @@ div.div-button-email {
 	line-height: var(--multi-30-16);
 	cursor: pointer;
 }
-
-div.div-button-email ul.list-button-email {
+.container-email__list {
 	display: flex;
 	gap: 20px;
 }
-
-ul.list-button-email li {
+.container-email__item {
 	padding-top: 10px;
 	padding-bottom: 8px;
 }
-
-button.button-email {
+.container-email__button {
 	padding-left: 39px;
 	background-color: var(--logo-color);
 	color: var(--tittle-color);
@@ -781,12 +730,10 @@ button.button-email {
 	border-radius: 4px;
 	cursor: pointer;
 }
-
-div.div-icon-button {
+.container-email__container {
 	margin-right: 28px;
 }
-
-div.div-icon-button svg {
+.container-email__icon-name {
 	display: inline-block;
 	width: 24px;
 	height: 24px;

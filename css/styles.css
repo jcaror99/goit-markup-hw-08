@@ -496,8 +496,11 @@ body {
 	display: flex;
 }
 .social-item__icon-name {
+	display: inline-block;
 	width: 44px;
 	height: 44px;
+}
+.social-item__icon-name--team {
 	fill: var(--card-team-color);
 }
 .social-item__icon-name:hover .social-item__icon,
@@ -662,24 +665,20 @@ footer {
 .footer-container__tittle {
 	margin-bottom: 20px;
 }
-.footer-container__icon-list {
-	display: flex;
+
+.social-item--footer {
 	gap: 10px;
 }
-.footer-container__icon-name {
-	display: inline-block;
-	width: 44px;
-	height: 44px;
-}
-.footer-container__icon {
+.social-item__icon {
 	--color3: var(--card-team-color);
 	--color4: rgba(255, 255, 255, 0.1);
 }
-.footer-container__icon-name:hover .footer-container__icon,
-.footer-container__icon-name:focus .footer-container__icon {
+.social-item__icon-name--team:hover .social-item__icon,
+.social-item__icon-name--team:focus .social-item__icon {
 	--color3: var(--card-team-color);
 	--color4: var(--logo-color);
 }
+
 .footer-container__newsletter-tittle {
 	margin-bottom: 20px;
 	font-size: 14px;

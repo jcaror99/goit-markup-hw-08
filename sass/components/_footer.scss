@@ -1,0 +1,101 @@
+footer {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: $tittle-backcolor;
+    color: $tittle-color;
+    line-height: $multi-24-14;
+}
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer-container__list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container__link {
+    color: $contact-color;
+
+    &:hover,
+    &:focus {
+            color: $logo-color;
+        }
+}
+.footer-container__tittle {
+    margin-bottom: 20px;
+}
+
+.social-item--footer {
+    gap: 10px;
+}
+.social-item__icon--footer {
+    --color3: var(--card-team-color);
+    --color4: rgba(255, 255, 255, 0.1);
+}
+.social-item__icon-name--footer:hover .social-item__icon--footer,
+.social-item__icon-name--footer:focus .social-item__icon--footer {
+    --color3: var(--card-team-color);
+    --color4: var(--logo-color);
+}
+
+.footer-container__newsletter-tittle {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: $multi-16-14;
+}
+.footer-container__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 101px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: $multi-20-16;
+    background-color: $tittle-backcolor;
+}
+
+.footer-container__newsletter-list {
+    display: flex;
+    gap: 12px;
+}
+
+.container-email {
+    background-color: $logo-color;
+    color: $tittle-color;
+
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: $multi-30-16;
+    cursor: pointer;
+}
+.container-email__list {
+    display: flex;
+    gap: 20px;
+}
+.container-email__item {
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.container-email__button {
+    padding-left: 39px;
+    background-color: $logo-color;
+    color: $tittle-color;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.container-email__container {
+    margin-right: 28px;
+
+    .container-email__icon-name {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+        }
+}

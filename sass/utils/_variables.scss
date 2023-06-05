@@ -1,0 +1,39 @@
+/*Variable de colores para la hoja*/
+$sheet-backcolor: #ffffff;
+$tittle-backcolor: #2f303a;
+$our-team: #f5f4fa;
+
+/*Variable de colores para el texto*/
+$logo-color: #2196f3;
+$button-send: #188ce8;
+$tittle-color: #ffffff;
+$contact-color: rgba(255, 255, 255, 0.6);
+$text-color: #757575;
+$black-color: #212121;
+$card-team-color: #ffffff;
+$border-header: #ececec;
+$border-icon-customer: #afb1b8;
+$background-icon-footer: #ffffff1a;
+$backdrop: rgba(0, 0, 0, 0.2);
+$border-catalog:#eeeeee;
+
+/*Variables de interlineado line-height(multiplicador)=line-height (px)/font-size (px)*/
+$multi-60-44: 1.4;
+$multi-42-36: 1.2;
+$multi-36-18: 2;
+$multi-31-26: 1.2;
+$multi-30-16: 1.9;
+$multi-28-18: 1.5;
+$multi-26-16: 1.6;
+$multi-24-14: 1.7;
+$multi-23-20: 1.1;
+$multi-20-16: 1.2;
+$multi-19-16: 1.2;
+$multi-16-14: 1.1;
+$multi-14-12: 1.1;
+
+// Variables para iconos
+:root {
+    --logo-color: #2196f3;
+    --card-team-color: #ffffff;
+}

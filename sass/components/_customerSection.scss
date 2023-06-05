@@ -1,0 +1,44 @@
+.section-customers {
+    padding-top: 59px;
+    padding-bottom: 151px;
+
+    .section-customers_tittle {
+            font-weight: 700;
+            color: $black-color;
+            font-size: 36px;
+            line-height: $multi-42-36;
+            text-align: center;
+            margin-bottom: 44px;
+        }
+}
+.section-customers_icon-list {
+    display: flex;
+    justify-content: space-between;
+}
+.section-customers_item {
+    padding: 14px 32px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $border-icon-customer;
+    border-radius: 4px;
+
+    .section-customers_name-icon {
+            display: inline-block;
+            width: 106px;
+            height: 53px;
+            stroke-width: 0;
+            stroke: currentColor;
+            color: border-icon-customer;
+            fill: currentColor;
+        }
+    
+    &:hover,
+    &:focus {
+        border-color: $logo-color;
+    }
+
+    &:hover .section-customers_name-icon,
+    &:focus .section-customers_name-icon {
+        --color3: var(--logo-color);
+    }
+}

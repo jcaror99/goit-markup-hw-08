@@ -10,7 +10,9 @@
 }
 .section-team__list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 .section-team__container {
     background-color: $card-team-color;
@@ -21,6 +23,8 @@
 }
 .section-team__img {
     display: block;
+    width: 450px;
+    height: 460px;
 }
 .section-team-card {
     padding: 30px 44px;
@@ -45,6 +49,7 @@
 
 .social-item {
     display: flex;
+    justify-content: center;
 }
 .social-item__icon-name {
     display: inline-block;

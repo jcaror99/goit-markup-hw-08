@@ -18,8 +18,13 @@
 		<header>
 			<div class="container container--header">
 				<nav class="nav-menu">
-					<a class="logo logo--header underlined" href="./index.html">WebStudio</a>
-					<ul class="header-list header-list--menu">
+					<a class="logo underlined" href="./index.html">
+						<ul class="logo_list logo_list--header">
+							<li>Web</li>
+							<li>Studio</li>
+						</ul>
+					</a>
+					<!-- <ul class="header-list header-list--menu">
 						<li>
 							<a class="header-list__link header-list__link--active underlined" href="./index.html"
 								>Estudio</a
@@ -31,9 +36,9 @@
 						<li>
 							<a class="header-list__link underlined" href="">Сontactos</a>
 						</li>
-					</ul>
+					</ul> -->
 				</nav>
-				<ul class="header-list">
+				<!-- <ul class="header-list">
 					<li>
 						<ul class="header-list-contact">
 							<li>
@@ -60,11 +65,21 @@
 							</li>
 						</ul>
 					</li>
-				</ul>
+				</ul> -->
+				<button
+					class="nav-mobile_button js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					type="button"
+				>
+					<svg class="nav-mobile_icon-name">
+						<use class="nav-mobile_icon" href="./images/icons.svg#icon-nav-menu"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 		<main class="main-index">
-			<section class="section section-backdrop is-hidden" data-modal>
+			<section class="section-backdrop is-hidden" data-modal>
 				<form action="" class="section-backdrop__modal-form is-hidden">
 					<button class="section-backdrop__button" type="button" data-modal-close>
 						<svg class="section-backdrop__icon">
@@ -162,7 +177,9 @@
 									<use href="./images/icons.svg#icon-antenna"></use>
 								</svg>
 							</div>
-							<h3 class="section-valours__tittle p-underlined">ATENCIÓN A LOS DETALLES</h3>
+							<h3 class="section-valours__tittle section-valours__tittle--p-underlined">
+								ATENCIÓN A LOS DETALLES
+							</h3>
 							<p class="section-valours__description p-underlined">
 								Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar
 								una solución a su medida.
@@ -174,7 +191,9 @@
 									<use href="./images/icons.svg#icon-clock"></use>
 								</svg>
 							</div>
-							<h3 class="section-valours__tittle p-underlined">PUNTUALIDAD</h3>
+							<h3 class="section-valours__tittle section-valours__tittle--p-underlined">
+								PUNTUALIDAD
+							</h3>
 							<p class="section-valours__description p-underlined">
 								Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la
 								empresa: respetar su tiempo y respetar los plazos acordados.
@@ -186,7 +205,9 @@
 									<use href="./images/icons.svg#icon-diagram"></use>
 								</svg>
 							</div>
-							<h3 class="section-valours__tittle p-underlined">PLANIFICACIÓN</h3>
+							<h3 class="section-valours__tittle section-valours__tittle--p-underlined">
+								PLANIFICACIÓN
+							</h3>
 							<p class="section-valours__description p-underlined">
 								Usted podrá observar y participar en cada fase del desarrollo y aplicación de
 								soluciones.
@@ -198,7 +219,9 @@
 									<use href="./images/icons.svg#icon-astronaut"></use>
 								</svg>
 							</div>
-							<h3 class="section-valours__tittle p-underlined">TEGNOLOGÍA MODERNA</h3>
+							<h3 class="section-valours__tittle section-valours__tittle--p-underlined">
+								TEGNOLOGÍA MODERNA
+							</h3>
 							<p class="section-valours__description p-underlined">
 								Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de
 								simplificar los procesos laborales.
@@ -207,7 +230,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="section-mision">
+			<!-- <section class="section-mision">
 				<div class="container">
 					<h2 class="section-mision__tittle p-underlined">A qué nos dedicamos</h2>
 					<ul class="section-mision__tittle__list">
@@ -225,20 +248,14 @@
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> -->
 			<section class="section section-team">
 				<div class="container">
 					<h2 class="section-team__tittle p-underlined">Nuestro Equipo</h2>
 					<ul class="section-team__list">
 						<li>
 							<div class="section-team__container">
-								<img
-									class="section-team__img"
-									src="images/imagen4.jpg"
-									alt="designer"
-									width="270"
-									height="260"
-								/>
+								<img class="section-team__img" src="images/imagen4.jpg" alt="designer" />
 								<div class="section-team-card">
 									<h3 class="section-team-card__tittle p-underlined">Andrés Cubo</h3>
 									<p class="section-team-card__profession p-underlined">Diseñador de Productos</p>
@@ -289,13 +306,7 @@
 						</li>
 						<li>
 							<div class="section-team__container">
-								<img
-									class="section-team__img"
-									src="images/imagen5.jpg"
-									alt=""
-									width="270"
-									height="260"
-								/>
+								<img class="section-team__img" src="images/imagen5.jpg" alt="" />
 								<div class="section-team-card">
 									<h3 class="section-team-card__tittle p-underlined">Carla Palacios</h3>
 									<p class="section-team-card__profession p-underlined">Desarrolladora Frontend</p>
@@ -346,13 +357,7 @@
 						</li>
 						<li>
 							<div class="section-team__container">
-								<img
-									class="section-team__img"
-									src="images/imagen6.jpg"
-									alt=""
-									width="270"
-									height="260"
-								/>
+								<img class="section-team__img" src="images/imagen6.jpg" alt="" />
 								<div class="section-team-card">
 									<h3 class="section-team-card__tittle p-underlined">Mario Dorado</h3>
 									<p class="section-team-card__profession p-underlined">Marketing</p>
@@ -403,13 +408,7 @@
 						</li>
 						<li>
 							<div class="section-team__container">
-								<img
-									class="section-team__img"
-									src="images/imagen7.jpg"
-									alt=""
-									width="270"
-									height="260"
-								/>
+								<img class="section-team__img" src="images/imagen7.jpg" alt="" />
 								<div class="section-team-card">
 									<h3 class="section-team-card__tittle p-underlined">Pablo Mijangos</h3>
 									<p class="section-team-card__profession p-underlined">Diseñador IU</p>
@@ -512,13 +511,20 @@
 			</section>
 		</main>
 		<footer>
-			<div class="container footer-container">
+			<div class="footer-container">
 				<ul class="footer-container__list">
-					<li>
+					<li class="footer-container__item">
 						<address>
-							<a class="logo p-underlined" href="./index.html">WebStudio</a>
-							<p class="p-underlined">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-							<ul>
+							<a class="logo underlined" href="./index.html">
+								<ul class="logo_list logo_list--footer">
+									<li>Web</li>
+									<li>Studio</li>
+								</ul>
+							</a>
+							<p class="footer_container_description p-underlined">
+								Calz. Ticomán 500, Ciudad de México, CDMX, México
+							</p>
+							<ul class="address_list">
 								<li>
 									<p>
 										<a class="footer-container__link p-underlined" href="mailto:info@example.com"
@@ -587,13 +593,13 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="footer-container__item">
 						<h3 class="footer-container__newsletter-tittle p-underlined">
 							SUSCRÍBASE AL BOLETÍN INFORMATIVO
 						</h3>
 						<form name="newsletterSubscription" autocomplete="on"></form>
 						<ul class="footer-container__newsletter-list">
-							<li>
+							<li class="footer-container__newsletter-item">
 								<input
 									type="email"
 									placeholder="Correo electrónico"
@@ -622,6 +628,7 @@
 				</ul>
 			</div>
 		</footer>
+		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

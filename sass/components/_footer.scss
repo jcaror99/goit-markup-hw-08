@@ -8,10 +8,16 @@ footer {
 .footer-container {
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .footer-container__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footer_container_description{
+    margin-top: 28px;
 }
 .footer-container__link {
     color: $contact-color;
@@ -23,6 +29,17 @@ footer {
 }
 .footer-container__tittle {
     margin-bottom: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.logo_list li:last-child {
+    color: $card-team-color;
+}
+
+.address_list {
+    display: block;
+    text-align: center;
 }
 
 .social-item--footer {
@@ -39,15 +56,27 @@ footer {
 }
 
 .footer-container__newsletter-tittle {
+    margin-top: 60px;
     margin-bottom: 20px;
     font-size: 14px;
     line-height: $multi-16-14;
+    text-align: center;
+}
+.footer-container__newsletter-list li:last-child {
+    display: flex;
+    justify-content: center;
+}
+.footer-container__newsletter-item {
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 450px;
 }
 .footer-container__input {
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
-    padding-right: 101px;
+    padding-right: 236px;
     border-width: 1px;
     border-style: solid;
     border-color: rgba(255, 255, 255, 0.3);
@@ -55,11 +84,7 @@ footer {
     font-size: 16px;
     line-height: $multi-20-16;
     background-color: $tittle-backcolor;
-}
-
-.footer-container__newsletter-list {
-    display: flex;
-    gap: 12px;
+    color: $card-team-color;
 }
 
 .container-email {
@@ -73,6 +98,7 @@ footer {
     font-size: 16px;
     line-height: $multi-30-16;
     cursor: pointer;
+    width: 200px;
 }
 .container-email__list {
     display: flex;
@@ -90,12 +116,8 @@ footer {
     border-radius: 4px;
     cursor: pointer;
 }
-.container-email__container {
-    margin-right: 28px;
-
-    .container-email__icon-name {
-            display: inline-block;
-            width: 24px;
-            height: 24px;
-        }
+.container-email__icon-name {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
 }

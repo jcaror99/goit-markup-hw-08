@@ -1,31 +1,39 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 .section-valours__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.section-valours__item {
-    flex-basis: calc((100% - 90px) / 4);
-
-    .section-valours__tittle {
-            color: $black-color;
-            line-height: $multi-16-14;
-            margin-top: 30px;
-        }
-
-    .section-valours__description {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        line-height: $multi-24-14;
-        margin-top: 10px;
-    }
+.section-valours__tittle {
+    color: $black-color;
+    line-height: $multi-16-14;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.section-valours__tittle--p-underlined:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-style: solid;
+    text-decoration-color: $logo-color;
+}
+.section-valours__description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: $multi-24-14;
+    margin-top: 10px;
 }
 .section-valours__container-icon {
-    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
     background-color: $our-team;
     border-radius: 4px;
 
     .section-valours__icon {
-            display: inline-block;
             width: 70px;
             height: 70px;
             stroke-width: 0;

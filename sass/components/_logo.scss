@@ -1,0 +1,21 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: $logo-color;
+    font-size: 24px;
+    line-height: $multi-28-24;
+
+    .logo_list {
+        display: flex;
+    }
+    .logo_list--footer {
+        justify-content: center;
+    }
+
+    .logo_list--header li:last-child {
+        color: $dual-tittle;
+    }
+    .logo_list--footer li:last-child {
+        color: $card-team-color;
+    }
+}

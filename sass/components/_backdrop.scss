@@ -3,8 +3,8 @@
     width: 100vw;
     height: 100vh;
     background-color: $backdrop;
-    top: 0;
-    left: 0;
+    top: 0px;
+    left: 0px;
     opacity: 1;
     visibility: visible;
     transition-property: opacity;
@@ -23,8 +23,8 @@
     visibility: hidden;
 }
 .section-backdrop__modal-form {
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     background-color: $sheet-backcolor;
     transform: translateY(0vh);
     opacity: 1;
@@ -65,7 +65,7 @@
 .section-backdrop__tittle-form {
     padding-top: 40px;
     padding-right: 40px;
-    padding-bottom: 2px;
+    padding-bottom: 16px;
     padding-left: 40px;
 
     font-size: 20px;
@@ -156,6 +156,7 @@
     line-height: $multi-30-16;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    margin-top: 31px;
 
     &:hover,
     &:focus {

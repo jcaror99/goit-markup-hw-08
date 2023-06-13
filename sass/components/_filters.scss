@@ -1,11 +1,11 @@
-.section.section-portfolio {
-    padding-top: 106px;
+.section-portfolio {
+    margin-top: 60px;
 }
 .section-portfolio__filters {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 .section-portfolio__button {
     font-family: 'Roboto', sans-serif;

@@ -18,8 +18,13 @@
 		<header>
 			<div class="container container--header">
 				<nav class="nav-menu">
-					<a class="logo logo--header underlined" href="./index.html">WebStudio</a>
-					<ul class="header-list header-list--menu">
+					<a class="logo underlined" href="./index.html">
+						<ul class="logo_list logo_list--header">
+							<li>Web</li>
+							<li>Studio</li>
+						</ul>
+					</a>
+					<!-- <ul class="header-list header-list--menu">
 						<li>
 							<a class="header-list__link underlined" href="./index.html">Estudio</a>
 						</li>
@@ -33,9 +38,9 @@
 						<li>
 							<a class="header-list__link underlined" href="">Сontactos</a>
 						</li>
-					</ul>
+					</ul> -->
 				</nav>
-				<ul class="header-list">
+				<!-- <ul class="header-list">
 					<li>
 						<ul class="header-list-contact">
 							<li>
@@ -62,11 +67,21 @@
 							</li>
 						</ul>
 					</li>
-				</ul>
+				</ul> -->
+				<button
+					class="nav-mobile_button js-open-menu"
+					aria-expanded="false"
+					aria-controls="mobile-menu"
+					type="button"
+				>
+					<svg class="nav-mobile_icon-name">
+						<use class="nav-mobile_icon" href="./images/icons.svg#icon-nav-menu"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 		<main class="main-portfolio">
-			<section class="section section-portfolio">
+			<section class="section-portfolio">
 				<div class="container">
 					<ul class="section-portfolio__filters">
 						<li>
@@ -95,8 +110,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosUnoUno.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Tecnoduck es una plataforma de distribución de coronavirus de última generación.
@@ -117,8 +130,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosUnoDos.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -141,8 +152,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosUnoTres.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -163,8 +172,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosDosUno.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -185,8 +192,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosDosDos.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -207,8 +212,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosDosTres.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -231,8 +234,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosTresUno.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -253,8 +254,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosTresDos.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -275,8 +274,6 @@
 										class="section-portfolio__img"
 										src="./images/PortfolioPosTresTres.jpg"
 										alt=""
-										width="370"
-										height="294"
 									/>
 									<p class="section-portfolio__description">
 										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum est illo
@@ -295,13 +292,20 @@
 			</section>
 		</main>
 		<footer>
-			<div class="container footer-container">
+			<div class="footer-container">
 				<ul class="footer-container__list">
-					<li>
+					<li class="footer-container__item">
 						<address>
-							<a class="logo p-underlined" href="./index.html">WebStudio</a>
-							<p class="p-underlined">Calz. Ticomán 500, Ciudad de México, CDMX, México</p>
-							<ul>
+							<a class="logo underlined" href="./index.html">
+								<ul class="logo_list logo_list--footer">
+									<li>Web</li>
+									<li>Studio</li>
+								</ul>
+							</a>
+							<p class="footer_container_description p-underlined">
+								Calz. Ticomán 500, Ciudad de México, CDMX, México
+							</p>
+							<ul class="address_list">
 								<li>
 									<p>
 										<a class="footer-container__link p-underlined" href="mailto:info@example.com"
@@ -370,13 +374,13 @@
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li class="footer-container__item">
 						<h3 class="footer-container__newsletter-tittle p-underlined">
 							SUSCRÍBASE AL BOLETÍN INFORMATIVO
 						</h3>
 						<form name="newsletterSubscription" autocomplete="on"></form>
 						<ul class="footer-container__newsletter-list">
-							<li>
+							<li class="footer-container__newsletter-item">
 								<input
 									type="email"
 									placeholder="Correo electrónico"

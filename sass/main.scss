@@ -1,16 +1,3 @@
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 @import "./utils/variables";
 @import "./components/header";
 @import "./components/logo";
@@ -40,6 +27,19 @@ ul {
 
 address {
     font-style: normal;
+}
+
+.container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .underlined:hover::after {

@@ -1,0 +1,5 @@
+@mixin navMenu($display, $direction: row, $gap) {
+    display: $display;
+    flex-direction: $direction;
+    gap: $gap;
+}

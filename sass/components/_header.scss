@@ -48,24 +48,25 @@ header {
     .nav-menu {
             color: $black-color;
             line-height: $multi-16-14;
-            display: flex;
-            flex-direction: row;
-            gap: 12.11vw;
+            @include navMenu(
+                flex,
+                row,
+                12.11vw);
         }
 
     .header-list__menu {
-        display: flex;
-        gap: 6.51vw;
+        @include navMenu(flex,
+            row,
+            6.51vw);
         align-items: center;
     }
 
     .header-list-contact {
-        display: flex;
+        @include navMenu(flex,row,8px);
         stroke-width: 0;
         stroke: currentColor;
         color: $text-color;
         fill: currentColor;
-        gap: 8px;
 
         &:hover,
         &:focus {
@@ -111,5 +112,87 @@ header {
                 border-radius: 2px;
                 background-color: $logo-color;
             }
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container__mobile-menu {
+            display: none;
+        }
+
+    .nav-menu {
+        color: $black-color;
+        line-height: $multi-16-14;
+        @include navMenu(flex,
+            row,
+            12.11vw);
+    }
+
+    .header-list {
+        display: flex;
+        align-items: center;
+        gap: 2.5vw;
+    }
+
+    .header-list__menu {
+        @include navMenu(flex,
+                row,
+                6.51vw);
+        align-items: center;
+    }
+
+    .header-list-contact {
+        @include navMenu(flex, row, 8px);
+        stroke-width: 0;
+        stroke: currentColor;
+        color: $text-color;
+        fill: currentColor;
+
+        &:hover,
+        &:focus {
+            --color5: var(--logo-color);
+        }
+    }
+
+    .header-list-contact--messenger {
+        width: 16px;
+        height: 12px;
+    }
+
+    .header-list-contact--phone {
+        width: 10px;
+        height: 16px;
+    }
+
+    .header-list-contact__link {
+        color: $text-color;
+        line-height: $multi-16-14;
+
+        &:hover,
+        &:focus {
+            color: $logo-color;
+        }
+    }
+
+    .header-list__link--active,
+    .header-list__link:hover,
+    .header-list__link:focus,
+    .header-list__link:active {
+        color: $logo-color;
+    }
+
+    .header-list__link--active {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -17px;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $logo-color;
+        }
     }
 }

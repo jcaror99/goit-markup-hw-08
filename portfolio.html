@@ -24,7 +24,7 @@
 							<li>Studio</li>
 						</ul>
 					</a>
-					<!-- <ul class="header-list header-list--menu">
+					<ul class="header-list__menu">
 						<li>
 							<a class="header-list__link underlined" href="./index.html">Estudio</a>
 						</li>
@@ -38,9 +38,9 @@
 						<li>
 							<a class="header-list__link underlined" href="">Сontactos</a>
 						</li>
-					</ul> -->
+					</ul>
 				</nav>
-				<!-- <ul class="header-list">
+				<ul class="header-list">
 					<li>
 						<ul class="header-list-contact">
 							<li>
@@ -56,7 +56,7 @@
 						</ul>
 					</li>
 					<li>
-						<ul class="header-list-contact">
+						<ul class="header-list-contact header-list-contact__icon">
 							<li>
 								<svg class="header-list-contact--phone">
 									<use href="./images/icons.svg#icon-phone"></use>
@@ -67,17 +67,20 @@
 							</li>
 						</ul>
 					</li>
-				</ul> -->
-				<button
-					class="nav-mobile_button js-open-menu"
-					aria-expanded="false"
-					aria-controls="mobile-menu"
-					type="button"
-				>
-					<svg class="nav-mobile_icon-name">
-						<use class="nav-mobile_icon" href="./images/icons.svg#icon-nav-menu"></use>
-					</svg>
-				</button>
+				</ul>
+
+				<div class="container container__mobile-menu">
+					<button
+						class="nav-mobile_button js-open-menu"
+						aria-expanded="false"
+						aria-controls="mobile-menu"
+						type="button"
+					>
+						<svg class="nav-mobile_icon-name">
+							<use class="nav-mobile_icon" href="./images/icons.svg#icon-nav-menu"></use>
+						</svg>
+					</button>
+				</div>
 			</div>
 		</header>
 		<main class="main-portfolio">
